@@ -1,15 +1,11 @@
 export default {
   colors: {
-    colorBackground: "#FFFFFF",
-
-    colorListItemText: "#606060",
-    colorInputText: "#909090",
-    colorInputItemText: "#303030",
-    colorButton: "#40D9B8",
-    colorBoxListItem: "#EEEEEE",
-    colorBoxEmptyList: "#F2F2F2",
-    colorBoxEmptyListBorder: "#CCCCCC",
-
-    colorScroll: "#E5E5E5",
+    colorSidebar: "#1A1731",
+    colorTextName: "#3E4157",
+    colorBg: "#FAFBFF",
+    colorLogo: "#EBEEF6",
+    colorBlock: "#117EFF",
+    colorJourneys: "#9196AB",
+    colorInput: "#CCCFDE",
   },
 } as const;
