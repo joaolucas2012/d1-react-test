@@ -1,6 +1,12 @@
 import Header from "../../components/Header";
 import Sidebar from "../../components/SideBar";
-import { Container, Wrapper } from "./styles";
+import {
+  Container,
+  Content,
+  FilterWrapper,
+  JourneysWrapper,
+  Wrapper,
+} from "./styles";
 
 function Home(): JSX.Element {
   return (
@@ -8,6 +14,15 @@ function Home(): JSX.Element {
       <Sidebar />
       <Wrapper>
         <Header />
+
+        <Content>
+          <FilterWrapper>
+            <h2>Jornadas</h2>
+            Filter component
+          </FilterWrapper>
+
+          <JourneysWrapper>Journeys component</JourneysWrapper>
+        </Content>
       </Wrapper>
     </Container>
   );
