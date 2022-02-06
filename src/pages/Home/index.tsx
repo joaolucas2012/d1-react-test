@@ -1,7 +1,12 @@
+import Sidebar from "../../components/SideBar";
 import { Container } from "./styles";
 
 function Home(): JSX.Element {
-  return <Container>Hello World</Container>;
+  return (
+    <Container>
+      <Sidebar />
+    </Container>
+  );
 }
 
 export default Home;
