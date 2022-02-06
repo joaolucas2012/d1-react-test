@@ -1,6 +1,6 @@
 import { createContext, useContext, useReducer } from "react";
 
-export const JourneysContext = createContext({});
+export const JourneysContext = createContext([]);
 
 export const useDataValue = () => useContext(JourneysContext);
 

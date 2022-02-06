@@ -81,6 +81,7 @@
     "operator-linebreak": "off",
     "no-unused-vars": "off",
     "react/no-array-index-key": "off",
-    "@typescript-eslint/no-explicit-any": "off"
+    "@typescript-eslint/no-explicit-any": "off",
+    "function-paren-newline": "off"
   }
 }
