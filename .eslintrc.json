@@ -22,12 +22,7 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "prettier",
-    "import",
-    "eslint-plugin-import-helpers"
-  ],
+  "plugins": ["react", "prettier", "import", "eslint-plugin-import-helpers"],
   "globals": {
     "JSX": true,
     "React": true
