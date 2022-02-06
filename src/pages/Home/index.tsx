@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 
+import Filter from "src/components/Filter";
+import Journey from "src/components/Journey";
 import { useDataValue } from "src/context/JourneysContext";
 import api from "src/services/api";
 
@@ -18,11 +20,13 @@ function Home(): JSX.Element {
 
   const getJourneysData = () => {
     if (journey) {
-      api.get("filter").then((response) =>
-        dispatch({
-          type: "SET_FILTER",
-          filter: response.data,
-        })
+      api.get("filter").then(
+        (response) =>
+          dispatch({
+            type: "SET_FILTER",
+            filter: response.data,
+          })
+        //
       );
     }
   };
@@ -40,10 +44,12 @@ function Home(): JSX.Element {
         <Content>
           <FilterWrapper>
             <h2>Jornadas</h2>
-            Filter component
+            <Filter />
           </FilterWrapper>
 
-          <JourneysWrapper>Journeys component</JourneysWrapper>
+          <JourneysWrapper>
+            <Journey />
+          </JourneysWrapper>
         </Content>
       </Wrapper>
     </Container>
