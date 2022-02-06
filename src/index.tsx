@@ -2,10 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./App";
+import { JourneysData } from "./context/JourneysContext";
+import reducer, { initialState } from "./context/reducer";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <JourneysData initialState={initialState} reducer={reducer}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </JourneysData>,
   document.getElementById("root")
 );
