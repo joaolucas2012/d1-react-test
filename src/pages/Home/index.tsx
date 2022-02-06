@@ -1,10 +1,14 @@
+import Header from "../../components/Header";
 import Sidebar from "../../components/SideBar";
-import { Container } from "./styles";
+import { Container, Wrapper } from "./styles";
 
 function Home(): JSX.Element {
   return (
     <Container>
       <Sidebar />
+      <Wrapper>
+        <Header />
+      </Wrapper>
     </Container>
   );
 }

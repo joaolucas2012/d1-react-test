@@ -8,3 +8,13 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 `;
+
+export const Wrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin: -2px;
+  height: 100px;
+  width: 80%;
+  max-width: 100%;
+  align-items: center;
+`;
