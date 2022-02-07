@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Container } from "./styles";
+import JourneyStatus from "../JourneyStatus";
+import { Container, ItemName, ItemRecipient, ItemSuccess } from "./styles";
 
 interface IJourneyItem {
   id: string;
@@ -8,7 +9,6 @@ interface IJourneyItem {
   status: string;
   recipients: string;
   success: string;
-  key: string;
 }
 
 const JourneyItem = ({
@@ -17,10 +17,34 @@ const JourneyItem = ({
   status,
   recipients,
   success,
-  key,
 }: IJourneyItem) => {
-  const help = 2;
-  return <></>;
-};
+  const filterJourneyStatus = () => {
+    switch (+status) {
+      case 1:
+        return <JourneyStatus description="Em execução" status={status} />;
+      case 2:
+        return <JourneyStatus description="Ativa" status={status} />;
+      case 3:
+        return <JourneyStatus description="Configurando" status={status} />;
+      case 4:
+        return <JourneyStatus description="Ociosa" status={status} />;
+      case 5:
+        return <JourneyStatus description="Concluída" status={status} />;
+      default:
+        break;
+    }
+    return "";
+  };
+  return (
+    <Container key={id}>
+      <ItemName>{name}</ItemName>
 
+      <ItemRecipient>{recipients}</ItemRecipient>
+
+      <ItemSuccess>{success}</ItemSuccess>
+
+      {filterJourneyStatus()}
+    </Container>
+  );
+};
 export default JourneyItem;
