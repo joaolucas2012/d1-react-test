@@ -33,7 +33,7 @@ export const Status = styled.div<{
     margin-right: 9px;
     margin-bottom: 1px;
 
-    background-image: url(${icons[status]});
+    background-image: url(${icons[+status - 1]});
     background-position: center;
     background-repeat: no-repeat;
   `}

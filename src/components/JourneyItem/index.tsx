@@ -11,6 +11,14 @@ interface IJourneyItem {
   success: string;
 }
 
+const messages = [
+  "Em execução",
+  "Ativa",
+  "Configurando",
+  "Ociosa",
+  "Concluída",
+];
+
 const JourneyItem = ({
   id,
   name,
@@ -18,23 +26,9 @@ const JourneyItem = ({
   recipients,
   success,
 }: IJourneyItem) => {
-  const filterJourneyStatus = () => {
-    switch (+status) {
-      case 1:
-        return <JourneyStatus description="Em execução" status={status} />;
-      case 2:
-        return <JourneyStatus description="Ativa" status={status} />;
-      case 3:
-        return <JourneyStatus description="Configurando" status={status} />;
-      case 4:
-        return <JourneyStatus description="Ociosa" status={status} />;
-      case 5:
-        return <JourneyStatus description="Concluída" status={status} />;
-      default:
-        break;
-    }
-    return "";
-  };
+  const filterJourneyStatus = () => (
+    <JourneyStatus description={messages[+status - 1]} status={status} />
+  );
   return (
     <Container key={id}>
       <ItemName>{name}</ItemName>

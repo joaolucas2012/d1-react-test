@@ -9,6 +9,7 @@ interface IJourneyStatus {
 
 const JourneyStatus = ({ description, status }: IJourneyStatus) => (
   <Container>
+    {console.log("description", description)}
     <Status status={status} />
 
     <p>{description}</p>
