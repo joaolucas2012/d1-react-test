@@ -1,15 +1,18 @@
 import React from "react";
 
-import { Container } from "./styles";
+import { Container, Status } from "./styles";
 
-const JourneyStatus = ({ description, status }) => (
-  <>
-    <span>
-      <p />
+interface IJourneyStatus {
+  description: string;
+  status: string;
+}
 
-      <p>{description}</p>
-    </span>
-  </>
+const JourneyStatus = ({ description, status }: IJourneyStatus) => (
+  <Container>
+    <Status status={status} />
+
+    <p>{description}</p>
+  </Container>
 );
 
 export default JourneyStatus;
