@@ -59,7 +59,6 @@ export const JourneysWrapper = styled.div`
   position: relative;
   top: 50px;
   right: 50px;
-  z-index: -1;
 
   @media screen and (max-width: 1250px) {
     display: flex;
