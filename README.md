@@ -2,12 +2,18 @@
   # D1 Test React ✨
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias utilizadas</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;|&nbsp;
+  <a href="#-tecnologias">Tecnologias utilizadas</a>&nbsp;|&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;|&nbsp;
   <a href="#-layout">Layout</a>
 </p>
 
 <br>
+
+## 🔥 Deploy
+
+Você pode acessar o deploy deste projeto no Heroku pelo link:
+[Deploy](https://d1-test.herokuapp.com/)
 
 ## 🚀 Tecnologias
 
