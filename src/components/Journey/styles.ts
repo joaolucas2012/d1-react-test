@@ -16,7 +16,7 @@ export const Header = styled.div`
 
   > span {
     font-family: "Gotham-Book";
-    color: var(--color-journeys);
+    color: ${({ theme }) => theme.colors.colorJourneys};
     font-size: 14px;
   }
 `;

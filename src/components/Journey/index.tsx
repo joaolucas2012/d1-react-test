@@ -15,14 +15,18 @@ import {
 const Journey = () => {
   const [{ journey }, dispatch] = useDataValue();
 
-  useEffect(() => {
+  const getJourneysData = () => {
     api.get("journey").then((response) =>
       dispatch({
         type: "SET_JOURNEY",
         journey: response.data,
       })
     );
-  }, [dispatch]);
+  };
+
+  useEffect(() => {
+    getJourneysData();
+  }, [dispatch, journey]);
 
   return (
     <Container>
